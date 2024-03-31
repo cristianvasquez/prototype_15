@@ -15,7 +15,7 @@ ex:WhiteRabbit schema:address ex:address ;
                 "Conejo blanco"@es ,
                 "White rabbit"@en ;
     foaf:knows ex:Alice ;
-    ex:schedule _:b1 .
+    ex:schedule (ex:wakingUp ex:drinkTea ex:jumpAround).
 
 ex:address rdf:type schema:PostalAddress ;
     schema:streetAddress "5 Wonderland Street" ;
@@ -28,11 +28,6 @@ ex:Alice rdf:type ex:Person ;
     schema:name "Alice" ;
     foaf:img <https://miro.medium.com/max/1100/1*xupcHn3b0jEFPkjvuH5Pbw.jpeg> .
 
-_:b1 rdf:first ex:wakingUp ;
-     rdf:rest _:b2 .
-
-_:b2 rdf:first ex:drinkTea ;
-     rdf:rest rdf:nil .
 
 ex:drinkTea schema:name "Drink tea" ;
            ex:when "During the morning" .`

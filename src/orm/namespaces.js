@@ -12,6 +12,7 @@ function splitIfVocab (iri) {
   const candidates = Array.from(Object.entries(ns)).filter(([_, value]) => {
     return iri.startsWith(value().value)
   })
+
   if (candidates.length) {
     candidates.sort(([, iri1], [, iri2]) => iri2.length - iri1.length)
     const found = candidates[0]

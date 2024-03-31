@@ -13,7 +13,7 @@ function toORM (dataset) {
     }),
   )
   // const edges = [...dataset.filter(connectSubjects)]
-  const edges = dataset.filter(connectSubjects)
+  const edges = [...dataset.filter(connectSubjects)]
   return {
     nodes,
     edges,
