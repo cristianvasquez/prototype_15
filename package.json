@@ -5,7 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "dev": "concurrently \"vite\" \"HOST=localhost PORT=1234 npx y-websocket\" --kill-others",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,26 @@
   },
   "homepage": "https://github.com/cristianvasquez/prototype_15#readme",
   "dependencies": {
+    "@tldraw/tldraw": "^2.0.2",
+    "n3": "^1.17.3",
+    "rdf-ext": "^2.5.1",
+    "y-partykit": "^0.0.7",
+    "y-utility": "^0.1.3",
+    "y-websocket": "^1.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tldraw": "^2.0.2"
+  },
+  "devDependencies": {
     "chai": "^5.1.0",
     "expect": "^29.7.0",
     "expect-mocha-snapshot": "^2.1.5",
     "mocha": "^10.4.0",
-    "n3": "^1.17.3",
-    "rdf-ext": "^2.5.1"
+    "@vitejs/plugin-react": "^4.0.3",
+    "concurrently": "^8.2.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-top-level-await": "^1.3.1",
+    "vite-plugin-wasm": "^3.2.2"
   }
 }
