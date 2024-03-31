@@ -1,0 +1,27 @@
+{
+  "name": "prototype_15",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristianvasquez/prototype_15.git"
+  },
+  "author": "Cristian Vasquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristianvasquez/prototype_15/issues"
+  },
+  "homepage": "https://github.com/cristianvasquez/prototype_15#readme",
+  "dependencies": {
+    "chai": "^5.1.0",
+    "expect": "^29.7.0",
+    "expect-mocha-snapshot": "^2.1.5",
+    "mocha": "^10.4.0",
+    "rdf-ext": "^2.5.1"
+  }
+}

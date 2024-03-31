@@ -1,0 +1,309 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`erm Test blank node 1`] = `
+Array [
+  "blank node",
+  "
+<a> <b> [ <c> <d> ] .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test does not repeat 1`] = `
+Array [
+  "does not repeat",
+  "
+<a> <b> <c> ;
+    <b> <c> .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test foaf image 1`] = `
+Array [
+  "foaf image",
+  "
+<a> <http://xmlns.com/foaf/0.1/img> <little-cat> .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test groups attributes 1`] = `
+Array [
+  "groups attributes",
+  "
+<a> <b> <c> ;
+    <b> <d> .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test groups by value 1`] = `
+Array [
+  "groups by value",
+  "
+<a> <b> <d> ;
+    <c> <d> .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test languages 1`] = `
+Array [
+  "languages",
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos a\\" .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"prefered\\"@en .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test languagesMultiple 1`] = `
+Array [
+  "languagesMultiple",
+  "
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"first\\" .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"second\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test list 1`] = `
+Array [
+  "list",
+  "
+<a> <b> ( <c> <d> ) .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test literal 1`] = `
+Array [
+  "literal",
+  "
+<a> <b> \\"c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test object label foaf 1`] = `
+Array [
+  "object label foaf",
+  "
+<a> <b> <c> .
+<c> <http://xmlns.com/foaf/0.1/name> \\"foaf c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test object label rdfs 1`] = `
+Array [
+  "object label rdfs",
+  "
+<a> <b> <c> .
+<c> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test object label schema 1`] = `
+Array [
+  "object label schema",
+  "
+<a> <b> <c> .
+<c> <http://schema.org/name> \\"schema c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test object label skos 1`] = `
+Array [
+  "object label skos",
+  "
+<a> <b> <c> .
+<c> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos c\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test predicate label foaf 1`] = `
+Array [
+  "predicate label foaf",
+  "
+<a> <b> <c> .
+<b> <http://xmlns.com/foaf/0.1/name> \\"foaf b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test predicate label rdfs 1`] = `
+Array [
+  "predicate label rdfs",
+  "
+<a> <b> <c> .
+<b> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test predicate label schema 1`] = `
+Array [
+  "predicate label schema",
+  "
+<a> <b> <c> .
+<b> <http://schema.org/name> \\"schema b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test predicate label skos 1`] = `
+Array [
+  "predicate label skos",
+  "
+<a> <b> <c> .
+<b> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos b\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test schema image 1`] = `
+Array [
+  "schema image",
+  "
+<a> <http://schema.org/image> <little-cat> .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test simple 1`] = `
+Array [
+  "simple",
+  "
+<a> <b> <c> .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test subject label foaf 1`] = `
+Array [
+  "subject label foaf",
+  "
+<a> <b> <c> .
+<a> <http://xmlns.com/foaf/0.1/name> \\"foaf a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test subject label rdfs 1`] = `
+Array [
+  "subject label rdfs",
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2000/01/rdf-schema#label> \\"rdfs a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test subject label schema 1`] = `
+Array [
+  "subject label schema",
+  "
+<a> <b> <c> .
+<a> <http://schema.org/name> \\"schema a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test subject label skos 1`] = `
+Array [
+  "subject label skos",
+  "
+<a> <b> <c> .
+<a> <http://www.w3.org/2004/02/skos/core#prefLabel> \\"skos a\\" .
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
+
+exports[`erm Test types 1`] = `
+Array [
+  "types",
+  "<a> a <b> .
+<a> a <c> .
+<c> <http://schema.org/name> \\"class c\\" .
+
+",
+  NamedNode {
+    "value": "a",
+  },
+]
+`;
